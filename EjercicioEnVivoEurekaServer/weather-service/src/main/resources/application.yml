@@ -9,7 +9,16 @@ info:
     version: "1.0.0"
 
 server:
-  port: 8081
+  port: 0
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    hostname: localhost
+    instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+    prefer-ip-address: true
 
 management:
   endpoints:

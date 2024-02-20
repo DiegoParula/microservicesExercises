@@ -6,6 +6,8 @@ spring:
       uri: ${CONFIG_SERVER:<http://localhost:8888>}
       #import: configserver
       #enabled: false
+      import-check:
+        enabled: false
 profiles:
   active: dev
 
