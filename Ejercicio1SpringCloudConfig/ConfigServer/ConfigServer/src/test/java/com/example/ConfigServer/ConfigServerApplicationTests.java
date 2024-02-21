@@ -1,4 +1,4 @@
-package com.example.ConfigServerApplication;
+package com.example.ConfigServer;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
