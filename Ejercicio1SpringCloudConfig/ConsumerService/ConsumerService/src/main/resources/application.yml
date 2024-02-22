@@ -1,14 +1,14 @@
 spring:
   application:
-    name: dh-cuenta-service
-  cloud:
-    config:
+    name: dh-caja-service-prod
+  config:
+      import: optional:configserver:http://localhost:8888
       #import: optional:${config-server:http://localhost:8888}
-      uri: ${config-server:http://localhost:8888}
+      #uri: ${config-server:http://localhost:8888}
       #import: configserver
       #enabled: false
       import-check:
         enabled: false
-#profiles:
-  #active: dev
+profiles:
+  active: dev
 

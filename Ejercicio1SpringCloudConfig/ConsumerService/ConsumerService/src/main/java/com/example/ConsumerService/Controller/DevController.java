@@ -11,18 +11,15 @@ import java.util.Map;
 @RestController
 public class DevController {
 
-/*
-        @Value("${message}")
+
+        @Value("${denominaciones_billete}")
         private String message;
-        @Value("${global-message}")
-        private String globalMessage;
+
 
         @GetMapping("/service")
-        public Map<String,String> message() {
-            Map<String,String> response = new HashMap<>();
-            response.put("message", message);
-            response.put("global-message", globalMessage);
-            return response;
+        public String getMessage() {
+
+            return message;
         }
-*/
+
 }
